@@ -1,0 +1,20 @@
+/Users/jonathansonnek/Library/Java/JavaVirtualMachines/openjdk-25.0.1/Contents/Home/bin/java -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=61850 -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath /Users/jonathansonnek/Documents/GitHub/week-3-program-1-calculator-app-jsonnek/out/production/Calculator APP Main
+Enter first number (x):
+12
+Enter second number (y):
+3
+Select operation (1-6)
+1:Addition, 2:Multiplication, 3:Division, 4:Exponent (x^y), 5:Logarithm (log base y of x), 6:All operations:
+6
+Addition:
+x + y = 15.0
+Multiplication:
+ x * y = 36.0
+Division:
+x / y = 4.0
+Exponent:
+x^y = 1728.0
+Logarithm:
+log base y of x = 2.261859507142915
+
+Process finished with exit code 0
