@@ -19,42 +19,28 @@ public class Main {
             "1:Addition, 2:Multiplication, 3:Division, 4:Exponent (x^y), 5:Logarithm (log base y of x), 6:All operations: ");
     int operation = userinput.nextInt();
 //  Perform operation based on user input
-    if (operation == 1) {
-      System.out.println("Addiiton:\n" +
+    if (operation == 1 || operation == 6) {
+      System.out.println("Addition:\n" +
               "x + y = " + (x+y));
     }
-    else if (operation == 2) {
+    if (operation == 2 || operation == 6) {
       System.out.println("Multiplication:\n" +
               " x * y = " + (x*y));
     }
-    else if (operation == 3) {
+    if (operation == 3 || operation == 6) {
       System.out.println("Division:\n" +
-              "x / y = " + (x/7));
+              "x / y = " + (x/y));
     }
-    else if (operation == 4) {
+    if (operation == 4 || operation == 6) {
       System.out.println("Exponent:\n" +
               "x^y = " + Math.pow(x, y));
     }
-    else if (operation == 5) {
+    if (operation == 5 || operation == 6) {
       System.out.println("Logarithm:\n" +
               "log base y of x = " + Math.log(x) / Math.log(y));
     }
-    else if (operation == 6) {
-      System.out.println("Addition:\n" +
-              " x + y = " + (x+y));
-      System.out.println("Multiplication:\n" +
-              " x * y = " + (x*y));
-      System.out.println("Division:\n" +
-              "x / y = " + (x/7));
-      System.out.println("Exponent:\n" +
-              "x^y = " + Math.pow(x, y));
-      System.out.println("Logarithm:\n" +
-              "log base y of x = " + Math.log(x) / Math.log(y));
-    }
-    else {
+    if (operation > 6) {
       System.out.println("Invalid operation selected.");
     }
-
-
   }
 }
